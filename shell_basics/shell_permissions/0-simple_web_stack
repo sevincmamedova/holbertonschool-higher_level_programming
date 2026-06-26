@@ -1,0 +1,59 @@
+www.foobar.com one-server infrastructure
+
+COMPONENTS
+- 1 server (IP: 8.8.8.8)
+- Web server: Nginx
+- Application server (runs the codebase)
+- Application codebase
+- Database: MySQL
+- Domain: foobar.com with www A record → 8.8.8.8
+
+FLOW
+User types www.foobar.com → DNS resolves www A record to 8.8.8.8 →
+Browser sends HTTP request to server → Nginx receives request →
+forwards to application server → app executes code → queries MySQL →
+response returned to user over HTTP/HTTPS
+
+EXPLANATIONS
+
+What is a server?
+A server is a computer that provides services or resources to other
+computers (clients) over a network. It runs continuously and waits
+for incoming requests.
+
+What is the role of the domain name?
+The domain name (foobar.com) is a human-readable alias for the server
+IP address. DNS translates www.foobar.com to 8.8.8.8 so users do not
+need to remember IP addresses.
+
+What type of DNS record is www?
+www is an A record. It maps the hostname www.foobar.com directly to
+the IPv4 address 8.8.8.8.
+
+What is the role of the web server (Nginx)?
+Nginx listens for incoming HTTP/HTTPS requests, serves static files
+(HTML, CSS, images) directly, and forwards dynamic requests to the
+application server.
+
+What is the role of the application server?
+The application server executes the business logic of the codebase,
+processes dynamic requests, interacts with the database, and returns
+generated responses to Nginx.
+
+What is the role of the database (MySQL)?
+MySQL stores and retrieves persistent data such as user accounts,
+content, and transactions. The application server queries it using SQL.
+
+How does the server communicate with the user?
+The server communicates with the user's browser via HTTP (or HTTPS),
+which runs over TCP/IP.
+
+ISSUES
+
+SPOF (Single Point of Failure):
+There is only one server. If it goes down (hardware failure, crash),
+the entire website becomes unavailable.
+
+Downtime during maintenance:
+Deploying new code or restarting Nginx brings the site down briefly.
+There is no failover or zero-downtime deployment mechanism.
