@@ -17,3 +17,4 @@ Working with lists, tuples, sequences and the built-in methods that operate on t
 | `8-multiple_returns.py` | Returns a tuple with a string length and its first character |
 | `9-max_integer.py` | Finds the biggest integer of a list without using `max()` |
 | `10-divisible_by_2.py` | Returns a list of booleans marking the multiples of 2 |
+| `11-delete_at.py` | Deletes the item at a given position in a list |
