@@ -18,3 +18,4 @@ Superclasses, subclasses, method overriding, and the built-ins that inspect type
 | `tests/7-base_geometry.txt` | Doctests for `BaseGeometry` |
 | `8-rectangle.py` | Class `Rectangle` inheriting from `BaseGeometry` |
 | `9-rectangle.py` | Adds `area()` and `__str__` to the inherited `Rectangle` |
+| `10-square.py` | Class `Square` inheriting from `Rectangle` |
