@@ -1,0 +1,132 @@
+The ``7-base_geometry`` module
+==============================
+
+Using ``BaseGeometry``
+----------------------
+
+Import the class from the module:
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Instantiation
+-------------
+
+An instance can be created without any argument:
+
+    >>> bg = BaseGeometry()
+    >>> type(bg)
+    <class '7-base_geometry.BaseGeometry'>
+    >>> bg.__dict__
+    {}
+
+``area()``
+----------
+
+The area is not implemented, so it always raises an exception:
+
+    >>> bg.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
+
+It takes no argument other than ``self``:
+
+    >>> bg.area(7)
+    Traceback (most recent call last):
+    TypeError: area() takes 1 positional argument but 2 were given
+
+``integer_validator()``
+-----------------------
+
+Both a name and a value are required:
+
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+A name alone is not enough:
+
+    >>> bg.integer_validator("age")
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+A positive integer is valid and prints nothing:
+
+    >>> bg.integer_validator("age", 1)
+
+    >>> bg.integer_validator("my_int", 12)
+
+    >>> bg.integer_validator("width", 89)
+
+Zero is refused:
+
+    >>> bg.integer_validator("age", 0)
+    Traceback (most recent call last):
+    ValueError: age must be greater than 0
+
+A negative value is refused:
+
+    >>> bg.integer_validator("age", -4)
+    Traceback (most recent call last):
+    ValueError: age must be greater than 0
+
+A string is refused:
+
+    >>> bg.integer_validator("age", "4")
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+    >>> bg.integer_validator("name", "John")
+    Traceback (most recent call last):
+    TypeError: name must be an integer
+
+A float is refused, even when it has no decimal part:
+
+    >>> bg.integer_validator("age", 13.5)
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+    >>> bg.integer_validator("age", 4.0)
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+A tuple is refused:
+
+    >>> bg.integer_validator("age", (4,))
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+A list is refused:
+
+    >>> bg.integer_validator("age", [3])
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+A boolean is refused, even though ``bool`` inherits from ``int``:
+
+    >>> bg.integer_validator("age", True)
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+A set is refused:
+
+    >>> bg.integer_validator("age", {3, 4})
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+A dictionary is refused:
+
+    >>> bg.integer_validator("age", {"a": 3})
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+``None`` is refused:
+
+    >>> bg.integer_validator("age", None)
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+The name is reported as given:
+
+    >>> bg.integer_validator("distance", -4)
+    Traceback (most recent call last):
+    ValueError: distance must be greater than 0

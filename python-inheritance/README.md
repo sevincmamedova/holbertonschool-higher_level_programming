@@ -14,3 +14,5 @@ Superclasses, subclasses, method overriding, and the built-ins that inspect type
 | `4-inherits_from.py` | Returns `True` if an object inherits from a class, directly or indirectly |
 | `5-base_geometry.py` | Empty class `BaseGeometry` |
 | `6-base_geometry.py` | Adds `area()` raising an exception |
+| `7-base_geometry.py` | Adds `integer_validator()` to `BaseGeometry` |
+| `tests/7-base_geometry.txt` | Doctests for `BaseGeometry` |
