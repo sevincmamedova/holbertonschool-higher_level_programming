@@ -12,3 +12,5 @@ Importing functions from other files, using modules, and handling command line a
 | `calculator_1.py` | Defines `add`, `sub`, `mul` and `div` |
 | `2-args.py` | Prints the number of command line arguments and lists them |
 | `3-infinite_add.py` | Prints the sum of all command line arguments |
+| `5-variable_load.py` | Imports the variable `a` from `variable_load_5.py` and prints it |
+| `variable_load_5.py` | Defines the variable `a` |
