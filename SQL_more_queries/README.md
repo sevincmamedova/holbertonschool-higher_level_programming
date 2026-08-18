@@ -17,6 +17,7 @@ with joins, subqueries and unions.
 | `7-cities.sql` | Creates `hbtn_0d_usa` and the `cities` table with a foreign key |
 | `8-cities_of_california_subquery.sql` | Lists the cities of California using a subquery |
 | `9-cities_by_state_join.sql` | Lists all cities with their state name |
+| `10-genre_id_by_show.sql` | Lists the shows linked to at least one genre |
 | `11-genre_id_all_shows.sql` | Lists all shows with their genre id, `NULL` when none |
 | `12-no_genre.sql` | Lists the shows not linked to any genre |
 | `13-count_shows_by_genre.sql` | Counts the shows linked to each genre |
