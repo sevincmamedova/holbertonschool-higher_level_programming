@@ -10,3 +10,4 @@ Reading and writing files, and serializing objects with JSON.
 | `1-write_file.py` | Writes a string to a UTF8 text file and returns the character count |
 | `2-append_write.py` | Appends a string at the end of a UTF8 text file |
 | `3-to_json_string.py` | Returns the JSON string representation of an object |
+| `4-from_json_string.py` | Returns the Python object represented by a JSON string |
