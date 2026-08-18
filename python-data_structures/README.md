@@ -13,3 +13,4 @@ Working with lists, tuples, sequences and the built-in methods that operate on t
 | `4-new_in_list.py` | Replaces an element in a copy of a list, leaving the original intact |
 | `5-no_c.py` | Removes all `c` and `C` characters from a string |
 | `6-print_matrix_integer.py` | Prints a matrix of integers, one row per line |
+| `7-add_tuple.py` | Adds the first 2 integers of two tuples, padding missing ones with 0 |
