@@ -18,3 +18,4 @@ Working with lists, tuples, sequences and the built-in methods that operate on t
 | `9-max_integer.py` | Finds the biggest integer of a list without using `max()` |
 | `10-divisible_by_2.py` | Returns a list of booleans marking the multiples of 2 |
 | `11-delete_at.py` | Deletes the item at a given position in a list |
+| `12-switch.py` | Switches the values of `a` and `b` in exactly 5 lines |
