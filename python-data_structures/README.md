@@ -15,3 +15,4 @@ Working with lists, tuples, sequences and the built-in methods that operate on t
 | `6-print_matrix_integer.py` | Prints a matrix of integers, one row per line |
 | `7-add_tuple.py` | Adds the first 2 integers of two tuples, padding missing ones with 0 |
 | `8-multiple_returns.py` | Returns a tuple with a string length and its first character |
+| `9-max_integer.py` | Finds the biggest integer of a list without using `max()` |
