@@ -19,3 +19,4 @@ Superclasses, subclasses, method overriding, and the built-ins that inspect type
 | `8-rectangle.py` | Class `Rectangle` inheriting from `BaseGeometry` |
 | `9-rectangle.py` | Adds `area()` and `__str__` to the inherited `Rectangle` |
 | `10-square.py` | Class `Square` inheriting from `Rectangle` |
+| `11-square.py` | Adds `__str__` printing the square as `[Square] <w>/<h>` |
