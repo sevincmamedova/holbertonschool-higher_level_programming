@@ -11,3 +11,4 @@ Superclasses, subclasses, method overriding, and the built-ins that inspect type
 | `tests/1-my_list.txt` | Doctests for `MyList` |
 | `2-is_same_class.py` | Returns `True` if an object is exactly an instance of a class |
 | `3-is_kind_of_class.py` | Returns `True` if an object is an instance of a class or a subclass of it |
+| `4-inherits_from.py` | Returns `True` if an object inherits from a class, directly or indirectly |
