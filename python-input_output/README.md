@@ -11,3 +11,4 @@ Reading and writing files, and serializing objects with JSON.
 | `2-append_write.py` | Appends a string at the end of a UTF8 text file |
 | `3-to_json_string.py` | Returns the JSON string representation of an object |
 | `4-from_json_string.py` | Returns the Python object represented by a JSON string |
+| `5-save_to_json_file.py` | Writes an object to a text file using a JSON representation |
