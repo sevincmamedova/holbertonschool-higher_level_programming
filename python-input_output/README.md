@@ -14,3 +14,4 @@ Reading and writing files, and serializing objects with JSON.
 | `5-save_to_json_file.py` | Writes an object to a text file using a JSON representation |
 | `6-load_from_json_file.py` | Creates an object from a JSON file |
 | `7-add_item.py` | Adds the command line arguments to a list saved in `add_item.json` |
+| `8-class_to_json.py` | Returns the dictionary description of an object for JSON serialization |
