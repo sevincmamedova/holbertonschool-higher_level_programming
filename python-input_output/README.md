@@ -17,3 +17,4 @@ Reading and writing files, and serializing objects with JSON.
 | `8-class_to_json.py` | Returns the dictionary description of an object for JSON serialization |
 | `9-student.py` | Class `Student` with a `to_json()` method |
 | `10-student.py` | Adds an attribute filter to `Student.to_json()` |
+| `11-student.py` | Adds `reload_from_json()` to rebuild a `Student` from a dictionary |
