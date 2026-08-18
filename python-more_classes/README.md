@@ -12,3 +12,4 @@ Building on classes with properties, class attributes, static and class methods,
 | `3-rectangle.py` | Adds `__str__` so the rectangle prints with the character `#` |
 | `4-rectangle.py` | Adds `__repr__` so `eval(repr(r))` recreates the rectangle |
 | `5-rectangle.py` | Adds `__del__` printing `Bye rectangle...` on deletion |
+| `6-rectangle.py` | Adds the class attribute `number_of_instances` |
