@@ -17,3 +17,4 @@ Superclasses, subclasses, method overriding, and the built-ins that inspect type
 | `7-base_geometry.py` | Adds `integer_validator()` to `BaseGeometry` |
 | `tests/7-base_geometry.txt` | Doctests for `BaseGeometry` |
 | `8-rectangle.py` | Class `Rectangle` inheriting from `BaseGeometry` |
+| `9-rectangle.py` | Adds `area()` and `__str__` to the inherited `Rectangle` |
