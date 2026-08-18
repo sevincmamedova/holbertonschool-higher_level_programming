@@ -9,3 +9,4 @@ Superclasses, subclasses, method overriding, and the built-ins that inspect type
 | `0-lookup.py` | Returns the list of available attributes and methods of an object |
 | `1-my_list.py` | Class `MyList` inheriting from `list`, with `print_sorted()` |
 | `tests/1-my_list.txt` | Doctests for `MyList` |
+| `2-is_same_class.py` | Returns `True` if an object is exactly an instance of a class |
