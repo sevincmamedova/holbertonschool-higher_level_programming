@@ -15,3 +15,4 @@ Building on classes with properties, class attributes, static and class methods,
 | `6-rectangle.py` | Adds the class attribute `number_of_instances` |
 | `7-rectangle.py` | Adds the class attribute `print_symbol` used for the drawing |
 | `8-rectangle.py` | Adds the static method `bigger_or_equal()` comparing areas |
+| `9-rectangle.py` | Adds the class method `square()` building a square rectangle |
