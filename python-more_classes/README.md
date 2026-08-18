@@ -7,3 +7,4 @@ Building on classes with properties, class attributes, static and class methods,
 | File | Description |
 | ---- | ----------- |
 | `1-rectangle.py` | Class `Rectangle` with validated `width` and `height` properties |
+| `2-rectangle.py` | Adds the `area()` and `perimeter()` public methods |
