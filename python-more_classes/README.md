@@ -1,0 +1,9 @@
+# Python - More Classes and Objects
+
+Building on classes with properties, class attributes, static and class methods, and the special methods `__str__`, `__repr__` and `__del__`.
+
+## Files
+
+| File | Description |
+| ---- | ----------- |
+| `1-rectangle.py` | Class `Rectangle` with validated `width` and `height` properties |
